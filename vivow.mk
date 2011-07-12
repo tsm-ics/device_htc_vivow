@@ -205,7 +205,7 @@ $(call inherit-product, device/htc/vivow/media_htcaudio.mk)
 # stuff common to all HTC phones
 $(call inherit-product, device/htc/common/common.mk)
 
-$(call inherit-product, build/target/product/full_base.mk)
+$(call inherit-product, build/target/product/full.mk)
 
 PRODUCT_NAME := htc_vivow
 PRODUCT_DEVICE := vivow
