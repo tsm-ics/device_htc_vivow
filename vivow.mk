@@ -29,7 +29,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml \
     frameworks/base/data/etc/android.hardware.camera.front.xml:system/etc/permissions/android.hardware.camera.front.xml
-##    frameworks/base/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
+##  frameworks/base/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
 
 ## (2) Also get non-open-source GSM-specific aspects if available
 $(call inherit-product-if-exists, vendor/htc/vivow/vivow-vendor.mk)
@@ -70,6 +70,26 @@ PRODUCT_PACKAGES += \
     lights.vivow \
     sensors.vivow \
     gps.vivow
+
+# other packages
+PRODUCT_PACKAGES += \
+    Torch \
+    FM \
+    hcitool \
+    AicBootFix\
+    Stk \
+    Provision \
+    QuickSearchBoxt
+
+# theme stuff
+PRODUCT_PACKAGES += \
+	ThemeManager \
+	ThemeChooser \
+	com.tmobile.themes
+
+PRODUCT_COPY_FILES += \
+	frameworks/base/data/etc/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml
+	device/htc/vivow/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh
 
 # Keychars
 PRODUCT_COPY_FILES += \

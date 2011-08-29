@@ -21,4 +21,4 @@
 # function: add_lunch_combo generic-eng
 
 #add_lunch_combo htc_vivow-userdebug
-#add_lunch_combo htc_vivow-eng
+add_lunch_combo htc_vivow-eng
