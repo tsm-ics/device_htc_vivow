@@ -88,7 +88,7 @@ PRODUCT_PACKAGES += \
 	com.tmobile.themes
 
 PRODUCT_COPY_FILES += \
-	frameworks/base/data/etc/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml
+	frameworks/base/data/etc/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml \
 	device/htc/vivow/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh
 
 # Keychars
