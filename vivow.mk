@@ -229,5 +229,5 @@ $(call inherit-product, build/target/product/full_base.mk)
 
 PRODUCT_NAME := htc_vivow
 PRODUCT_DEVICE := vivow
-PRODUCT_MODEL := HTC Incredible 2
+PRODUCT_MODEL := Incredible 2
 PRODUCT_MANUFACTURER := HTC
