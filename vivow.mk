@@ -78,8 +78,6 @@ PRODUCT_PACKAGES += \
     hcitool \
     AicBootFix\
     Stk \
-    Provision \
-    QuickSearchBox \
     TSMParts
 
 # theme stuff
@@ -200,6 +198,14 @@ PRODUCT_COPY_FILES += \
 # media config xml file
 PRODUCT_COPY_FILES += \
     device/htc/vivow/media_profiles.xml:system/etc/media_profiles.xml
+
+# Extended JNI checks
+# The extended JNI checks will cause the system to run more slowly, but they can spot a variety of nasty bugs 
+# before they have a chance to cause problems.
+# Default=true for development builds, set by android buildsystem.
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.kernel.android.checkjni=0 \
+    dalvik.vm.checkjni=false
 
 # Kernel modules
 #PRODUCT_COPY_FILES += \
