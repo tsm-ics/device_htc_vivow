@@ -79,17 +79,22 @@ PRODUCT_PACKAGES += \
     AicBootFix\
     Stk \
     Provision \
-    QuickSearchBoxt
+    QuickSearchBox \
+    TSMParts
 
 # theme stuff
 PRODUCT_PACKAGES += \
-	ThemeManager \
-	ThemeChooser \
-	com.tmobile.themes
+    ThemeManager \
+    ThemeChooser \
+    com.tmobile.themes
 
 PRODUCT_COPY_FILES += \
-	frameworks/base/data/etc/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml \
-	device/htc/vivow/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh
+    frameworks/base/data/etc/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml \
+    device/htc/vivow/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh \
+    device/htc/vivow/prebuilt/etc/resolv.conf:system/etc/resolv.conf \
+    device/htc/vivow/prebuilt/etc/sysctl.conf:system/etc/sysctl.conf \
+    device/htc/vivow/prebuilt/etc/terminfo/l/linux:system/etc/terminfo/l/linux \
+    device/htc/vivow/prebuilt/etc/terminfo/u/unknown:system/etc/terminfo/u/unknown 
 
 # Keychars
 PRODUCT_COPY_FILES += \
