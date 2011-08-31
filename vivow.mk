@@ -56,7 +56,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.cdma.home.operator.numeric = 310012 \
     ro.cdma.home.operator.alpha = Verizon \
     persist.telephony.support_ipv6=true \
-    persist.telephony.support_ipv4=true
+    persist.telephony.support_ipv4=true \
+    ro.modversion=TSMPoolParty-Inc2-1.2 \
+    ro.romversion=TSMPoolParty-Inc2-1.2
 
 #Additional Overrides
 PRODUCT_PROPERTY_OVERRIDES += \
