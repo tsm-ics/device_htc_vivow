@@ -105,7 +105,8 @@ PRODUCT_COPY_FILES += \
     device/htc/vivow/prebuilt/etc/sysctl.conf:system/etc/sysctl.conf \
     device/htc/vivow/prebuilt/etc/terminfo/l/linux:system/etc/terminfo/l/linux \
     device/htc/vivow/prebuilt/etc/terminfo/u/unknown:system/etc/terminfo/u/unknown \
-    device/htc/vivow/prebuilt/media/bootanimation.zip:system/media/bootanimation.zip
+    device/htc/vivow/prebuilt/media/bootanimation.zip:system/media/bootanimation.zip \
+    device/htc/vivow/prebuilt/system/app/AccuWeatherDaemonService.apk:system/app/AccuWeatherDaemonService.apk
 
 # Keychars
 PRODUCT_COPY_FILES += \
