@@ -90,7 +90,8 @@ PRODUCT_PACKAGES += \
     hcitool \
     AicBootFix\
     Stk \
-    TSMParts
+    TSMParts \
+    AndroidTerm
 
 # theme stuff
 PRODUCT_PACKAGES += \
