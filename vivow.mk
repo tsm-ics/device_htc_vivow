@@ -58,7 +58,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.telephony.support_ipv6=true \
     persist.telephony.support_ipv4=true \
     ro.modversion=TSMPoolParty-Inc2-1.3 \
-    ro.rommanager.developerid=omj-
+    ro.rommanager.developerid=OMJ-
 
 #Additional Overrides
 PRODUCT_PROPERTY_OVERRIDES += \
