@@ -91,7 +91,9 @@ PRODUCT_PACKAGES += \
     AicBootFix\
     Stk \
     TSMParts \
-    AndroidTerm
+    AndroidTerm \
+    CMScreenshot \
+    Pacman
 
 # theme stuff
 PRODUCT_PACKAGES += \
