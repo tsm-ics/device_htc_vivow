@@ -93,6 +93,7 @@ PRODUCT_PACKAGES += \
     TSMParts \
     AndroidTerm \
     CMScreenshot \
+    screenshot \
     Pacman
 
 # theme stuff
