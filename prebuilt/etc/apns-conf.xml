@@ -1,7 +1,5 @@
-
-<!-- saved from url=(0104)https://raw.github.com/CyanogenMod/android_vendor_cyanogen/gingerbread/prebuilt/common/etc/apns-conf.xml -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">&lt;?xml version="1.0" encoding="utf-8"?&gt;
-&lt;!--
+<?xml version="1.0" encoding="utf-8"?>
+<!--
 /*
 ** Copyright 2006, Google Inc.
 **
@@ -17,8 +15,8 @@
 ** See the License for the specific language governing permissions and
 ** limitations under the License.
 */
---&gt;
-&lt;!-- use empty string to specify no proxy or port --&gt;
+-->
+<!-- use empty string to specify no proxy or port -->
 &lt;apns version="6"&gt;
   &lt;apn carrier="Cosmote GR" mcc="202" mnc="01" apn="Internet" type="default,supl" /&gt;
   &lt;apn carrier="Cosmote GR MMS" mcc="202" mnc="01" apn="Mms" mmsc="195.167.65.220:8002" mmsproxy="10.10.10.20" mmsport="8080" type="mms" /&gt;
