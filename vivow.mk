@@ -57,7 +57,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.cdma.home.operator.alpha = Verizon \
     persist.telephony.support_ipv6=true \
     persist.telephony.support_ipv4=true \
-    ro.modversion=TSMPoolParty-Inc2-1.3.1 \
+    ro.modversion=TSMPoolParty-Inc2-1.4.1 \
     ro.rommanager.developerid=OMJ-
 
 #Additional Overrides
