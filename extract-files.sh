@@ -80,13 +80,9 @@ adb pull /system/lib/libqdp.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES += \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libcamera.so:obj/lib/libcamera.so \\
-<<<<<<< HEAD
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libaudio.so:obj/lib/libaudio.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libaudioalsa.so:obj/lib/libaudioalsa.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libril.so:obj/lib/libril.so
-=======
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/libaudioalsa.so:obj/lib/libaudioalsa.so
->>>>>>> 70f9366... Vivow: audio update
 
 # All the blobs necessary for vivow
 PRODUCT_COPY_FILES += \\
