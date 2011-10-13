@@ -70,6 +70,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.com.android.dataroaming=false
 
+# Override /proc/sys/vm/dirty_ratio on UMS
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vold.umsdirtyratio=20
+
 DEVICE_PACKAGE_OVERLAYS += device/htc/vivow/overlay
 
 # gsm config xml file
