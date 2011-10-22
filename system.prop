@@ -18,35 +18,35 @@ persist.data_netmgrd_nint=8
 rild.lib_ims_path=/system/lib/libims_ril.so
 
 # lexikon RF team request
-ro.ril.enable.dtm = 1
-ro.ril.gprsclass = 12
-ro.ril.hsdpa.category = 8
-ro.ril.hsupa.category = 6
-ro.ril.hsxpa = 2
+ro.ril.enable.dtm=1
+ro.ril.gprsclass=12
+ro.ril.hsdpa.category=8
+ro.ril.hsupa.category=6
+ro.ril.hsxpa=2
 
 #VZW featuer enabled
-ro.ril.vzw.feature = 1
-ro.ril.enable.managed.roaming = 1
+ro.ril.vzw.feature=1
+ro.ril.enable.managed.roaming=1
 
 # world phone feature enabled
-ro.ril.wp.feature = 1
+ro.ril.wp.feature=1
 # Default network type.
 # 4 => CDMA mode preferred.
 ro.telephony.default_network=4
 
 # For Verizon data retry configuration
-ro.cdma.data_retry_config = max_retries=infinite,0,0,60000,120000,480000,900000
+ro.cdma.data_retry_config=max_retries=infinite,0,0,60000,120000,480000,900000
 
 # Define TCP buffer sizes
 net.tcp.buffersize.hsdpa=4094,87380,393216,4096,16384,110208
-net.tcp.buffersize.evdo_b  4094,87380,262144,4096,16384,262144
+net.tcp.buffersize.evdo_b=4094,87380,262144,4096,16384,262144
 
 wifi.interface=eth0
 wifi.supplicant_scan_interval=15
 
 #Welly_Fang_01/05/2010
-ro.cdma.home.operator.numeric = 310012
-ro.cdma.home.operator.alpha = Verizon
+ro.cdma.home.operator.numeric=310012
+ro.cdma.home.operator.alpha=Verizon
 
 #mobiledata.interfaces=gannet0,rmnet0,rmnet1,rmnet2
 mobiledata.interfaces=rmnet0
