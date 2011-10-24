@@ -68,5 +68,8 @@ BOARD_SDCARD_DEVICE_PRIMARY := /dev/block/mmcblk1p1
 BOARD_SDCARD_DEVICE_SECONDARY := /dev/block/mmcblk1
 BOARD_SDEXT_DEVICE := /dev/block/mmcblk1p2
 BOARD_USES_MMCUTILS := true
+<<<<<<< HEAD
 BOARD_HAS_NO_MISC_PARTITION := true
 BOARD_USES_RECOVERY_CHARGEMODE := true
+=======
+>>>>>>> 8f668c0... Fix BoardConfig.mk to reflect changes in recovery.fstab
