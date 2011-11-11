@@ -57,7 +57,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.cdma.home.operator.alpha = Verizon \
     persist.telephony.support_ipv6=true \
     persist.telephony.support_ipv4=true \
-    ro.modversion=TSMPoolParty-Inc2-1.4.1 \
+    ro.modversion=TSMPoolParty-Inc2-1.6 \
     ro.rommanager.developerid=OMJ-
 
 #Additional Overrides
@@ -98,7 +98,8 @@ PRODUCT_PACKAGES += \
     AndroidTerm \
     CMScreenshot \
     screenshot \
-    Pacman
+    Pacman \
+    su
 
 # theme stuff
 PRODUCT_PACKAGES += \
