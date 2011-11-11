@@ -99,7 +99,8 @@ PRODUCT_PACKAGES += \
     CMScreenshot \
     screenshot \
     Pacman \
-    su
+    su \
+    FileManager
 
 # theme stuff
 PRODUCT_PACKAGES += \
