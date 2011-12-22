@@ -1,6 +1,10 @@
 #
 # system.prop for vivow
 #
+
+# Disable HW accel for now
+#ro.config.disable_hw_accel=true
+
 ro.sf.lcd_density=240
 
 debug.fb.rgb565=0
@@ -28,9 +32,10 @@ ro.ril.wp.feature=1
 # Default network type.
 # 4 => CDMA mode preferred.
 ro.telephony.default_network=4
+ro.telephony.ril.v3=datacall
 
 # For Verizon data retry configuration
-ro.cdma.data_retry_config=max_retries=infinite,0,0,60000,120000,480000,900000
+ro.cdma.data_retry_config = max_retries=infinite,0,0,60000,120000,480000,900000
 
 # Define TCP buffer sizes
 net.tcp.buffersize.hsdpa=4094,87380,393216,4096,16384,110208
@@ -55,7 +60,7 @@ mobiledata.interfaces=rmnet0
 ro.opengles.version=131072
 
 # This is a high density device with more memory, so larger vm heaps for it.
-dalvik.vm.heapsize=64m
+dalvik.vm.heapsize=48m
 
 # For the default value of agps
 ro.ril.def.agps.mode=2
@@ -71,4 +76,4 @@ postprocess.iso_midband=400
 postprocess.denoise_level=5
 
 # Recording Audio Workaround
-persist.camera.shutter.disable=1
+ro.camera.sound.disabled=1

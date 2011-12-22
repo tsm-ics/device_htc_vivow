@@ -24,6 +24,7 @@ PRODUCT_COPY_FILES += device/common/gps/gps.conf_US:system/etc/gps.conf
 
 PRODUCT_COPY_FILES += \
     device/htc/vivow/init.vivow.rc:root/init.vivow.rc \
+    device/htc/vivow/init.vivow.usb.rc:root/init.vivow.usb.rc \
     device/htc/vivow/ueventd.vivow.rc:root/ueventd.vivow.rc
 
 PRODUCT_COPY_FILES += \
@@ -56,19 +57,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.cdma.home.operator.numeric = 310012 \
     ro.cdma.home.operator.alpha = Verizon \
     persist.telephony.support_ipv6=true \
-    persist.telephony.support_ipv4=true \
-    ro.modversion=TSMPoolParty-Inc2-1.6 \
-    ro.rommanager.developerid=OMJ-
-
-#Additional Overrides
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
-    ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
-    ro.com.google.clientidbase=android-google \
-    ro.com.android.wifi-watchlist=GoogleGuest \
-    ro.setupwizard.enterprise_mode=1 \
-    ro.com.android.dateformat=MM-dd-yyyy \
-    ro.com.android.dataroaming=false
+    persist.telephony.support_ipv4=true
 
 # Override /proc/sys/vm/dirty_ratio on UMS
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -85,38 +74,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     lights.vivow \
     sensors.vivow \
-    gps.vivow
-
-# other packages
-PRODUCT_PACKAGES += \
-    Torch \
-    FM \
-    hcitool \
-    AicBootFix\
-    Stk \
-    TSMParts \
-    AndroidTerm \
-    CMScreenshot \
-    screenshot \
-    Pacman \
-    su \
-    FileManager
-
-# theme stuff
-PRODUCT_PACKAGES += \
-    ThemeManager \
-    ThemeChooser \
-    com.tmobile.themes
-
-PRODUCT_COPY_FILES += \
-    frameworks/base/data/etc/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml \
-    device/htc/vivow/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh \
-    device/htc/vivow/prebuilt/etc/resolv.conf:system/etc/resolv.conf \
-    device/htc/vivow/prebuilt/etc/sysctl.conf:system/etc/sysctl.conf \
-    device/htc/vivow/prebuilt/etc/terminfo/l/linux:system/etc/terminfo/l/linux \
-    device/htc/vivow/prebuilt/etc/terminfo/u/unknown:system/etc/terminfo/u/unknown \
-    device/htc/vivow/prebuilt/media/bootanimation.zip:system/media/bootanimation.zip \
-    device/htc/vivow/prebuilt/app/AccuWeatherDaemonService.apk:system/app/AccuWeatherDaemonService.apk
+    audio.a2dp.default \
+    audio.primary.msm7x30 \
+    hwcomposer.default \
+    hwcomposer.msm7x30 \
+    gps.vivow \
+    libaudioutils \
+    libtinyalsa
 
 # Keychars
 PRODUCT_COPY_FILES += \
@@ -145,7 +109,8 @@ PRODUCT_COPY_FILES += \
     device/htc/vivow/keylayout/vivow-keypad-ita.kl:system/usr/keylayout/vivow-keypad-ita.kl \
     device/htc/vivow/keylayout/vivow-keypad-tur.kl:system/usr/keylayout/vivow-keypad-tur.kl \
     device/htc/vivow/keylayout/vivow-keypad-wwe-bopomo.kl:system/usr/keylayout/vivow-keypad-wwe-bopomo.kl \
-    device/htc/vivow/keylayout/vivow-keypad-wwe.kl:system/usr/keylayout/vivow-keypad-wwe.kl
+    device/htc/vivow/keylayout/vivow-keypad-wwe.kl:system/usr/keylayout/vivow-keypad-wwe.kl \
+    device/htc/vivow/keylayout/atmel-touchscreen.kl:system/usr/keylayout/atmel-touchscreen.kl
 
 # Firmware
 PRODUCT_COPY_FILES += \
@@ -219,17 +184,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/htc/vivow/vold.fstab:system/etc/vold.fstab
 
+# Touchscreen
+PRODUCT_COPY_FILES += \
+    device/htc/vivow/idc/atmel-touchscreen.idc:system/usr/idc/atmel-touchscreen.idc
+
 # media config xml file
 PRODUCT_COPY_FILES += \
     device/htc/vivow/media_profiles.xml:system/etc/media_profiles.xml
-
-# Extended JNI checks
-# The extended JNI checks will cause the system to run more slowly, but they can spot a variety of nasty bugs 
-# before they have a chance to cause problems.
-# Default=true for development builds, set by android buildsystem.
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.kernel.android.checkjni=0 \
-    dalvik.vm.checkjni=false
 
 # Kernel modules
 #PRODUCT_COPY_FILES += \
